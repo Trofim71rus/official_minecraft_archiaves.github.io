@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installed Videos</title>
+    <style>
+        body {
+            font-family: 'Minecraftia', sans-serif; /* Используйте Minecraft шрифт */
+            background-image: url('dirt.png'); /* Путь к изображению dirt.png */
+            background-repeat: repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Располагаем контент сверху */
+            min-height: 100vh; /* Занимает всю высоту экрана */
+            color: #fff;
+        }
+
+        @font-face {
+            font-family: 'Minecraftia';
+            src: url('Minecraftia.ttf') format('truetype'); /* Путь к файлу шрифта */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #warning {
+            background-color: rgba(255, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-item {
+            margin-bottom: 20px;
+        }
+
+        .video-item video {
+            width: 640px;
+            height: 360px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="warning">
+    <p>You only have access to the downloaded videos because your IP address does not match the IP address of the account creator!</p>
+</div>
+
+<div id="video-container">
+    <div class="video-item">
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-item">
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-item">
+        <video controls>
+            <source src="video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-item">
+        <video controls>
+            <source src="video4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+</body>
+</html>

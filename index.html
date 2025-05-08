@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft OMA</title>
+    <style>
+        body {
+            font-family: 'Minecraftia', sans-serif; /* Используйте Minecraft шрифт */
+            background-image: url('dirt.png'); /* Путь к изображению dirt.png */
+            background-repeat: repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Располагаем контент сверху */
+            min-height: 100vh; /* Занимает всю высоту экрана */
+            color: #fff;
+        }
+
+        @font-face {
+            font-family: 'Minecraftia';
+            src: url('Minecraftia.ttf') format('truetype'); /* Путь к файлу шрифта */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #logo {
+            margin-top: 20px;
+            margin-bottom: 30px; /* Добавляем отступ снизу логотипа */
+        }
+
+        #login-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ddd;
+            color: #333;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Minecraftia', sans-serif;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        #video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .video-item {
+            margin-bottom: 20px;
+        }
+
+        .video-item video {
+            width: 640px;
+            height: 360px;
+        }
+    </style>
+</head>
+<body>
+
+<img id="logo" src="minecraft_oma_logo.png" alt="Minecraft OMA">
+
+<div id="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit"><a href="installed.html">Login</a>Login</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('login-form').addEventListener 
+        
+
+        
+        if (username === "admin44" && password === "password44") {
+            window.location.href = 'installed.html';
+        } else {
+            alert("Incorrect username or password.");
+        }
+    ;
+</script>
+
+</body>
+</html>
